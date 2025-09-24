@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECOBAZAR(Details)</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/icon/plant 1.svg"
+      type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .active-thumb {
+        border: 2px solid #16a34a;
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="w-full h-[195px]">
+      <nav
+        class="flex w-[1319px] h-[42px] items-center justify-between container mx-auto">
+        <div>
+          <p
+            class="flex text-[rgba(102,102,102,1)] text-[12px] font-normal gap-[8px]">
+            <img src="./assets/icon/Map Pin.svg" alt="" />
+            Store Location: Lincoln- 344, Illinois, Chicago, USA
+          </p>
+        </div>
+        <div class="flex gap-[20px]">
+          <select
+            class="bg-white text-[rgba(102,102,102,1)] text-[12px] font-normal"
+            name="lang"
+            id="language">
+            <option value="Eng">Eng</option>
+            <option value="Rus">Rus</option>
+            <option value="Uzb">Uzb</option>
+          </select>
+          <select
+            class="bg-white text-[rgba(102,102,102,1)] mr-[20px] text-[12px] font-normal"
+            name="currency"
+            id="">
+            <option value="">USD</option>
+            <option value="">RUB</option>
+            <option value="">UZS</option>
+          </select>
+          <div class="flex gap-[8px]">
+            <button class="text-[rgba(102,102,102,1)] text-[12px] font-normal">
+              Sign In
+            </button>
+            <h1 class="text-[rgba(102,102,102,1)]">/</h1>
+            <button class="text-[rgba(102,102,102,1)] text-[12px] font-normal">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </nav>
+      <nav
+        class="w-[1319px] h-[93px] container mx-auto flex justify-between items-center">
+        <div>
+          <a href="./index.html"><img src="./assets/img/Logo.svg" alt="" /></a>
+        </div>
+        <div class="w-[498px] h-[45px] relative flex">
+          <span class="absolute left-[16px] top-[12px]">
+            <img src="./assets/icon/Search.svg" alt="" />
+          </span>
+          <input
+            class="pl-[44px] w-[400px] h-[45px] rounded-tl-[6px] rounded-bl-[6px] border focus:outline-none"
+            type="text"
+            placeholder="Search" />
+          <button
+            class="w-[98px] h-[45px] bg-[rgba(0,178,7,1)] text-[white] font-[600] rounded-tr-[6px] rounded-br-[6px]">
+            Search
+          </button>
+        </div>
+        <div class="flex gap-[6px]">
+          <img src="./assets/icon/Heart.svg" alt="" />
+          <hr />
+          <img src="./assets/icon/Cart.svg" alt="" />
+          <div class="flex flex-col">
+            <p class="text-[11px] font-normal text-[rgba(77,77,77,1)]">
+              Shopping cart:
+            </p>
+            <p class="text-[14px] font-[500] text-[rgba(26,26,26,1)]">$57.00</p>
+          </div>
+        </div>
+      </nav>
+      <nav class="w-full h-[60px]">
+        <div
+          class="w-[1319px] h-[60px] container mx-auto flex justify-between items-center">
+          <div class="flex gap-[32px]">
+            <a href="#">
+              <select
+                class="bg-transparent text-[rgba(0,178,7,1)]"
+                name="Home"
+                id="">
+                <a href="index.html"><option value="">Home</option></a>
+              </select>
+            </a>
+            <a href="#">
+              <select
+                class="bg-transparent text-[rgba(153,153,153,1)]"
+                name="Shop"
+                id="">
+                <option value="">Shop</option>
+              </select>
+            </a>
+            <a href="#">
+              <select
+                class="bg-transparent text-[rgba(153,153,153,1)]"
+                name="Pages"
+                id="">
+                <option value="">Pages</option>
+              </select>
+            </a>
+            <a href="#">
+              <select
+                class="bg-transparent text-[rgba(153,153,153,1)]"
+                name="Blog"
+                id="">
+                <option value="">Blog</option>
+              </select>
+            </a>
+            <a class="text-[rgba(153,153,153,1)]" href="#">About Us</a>
+            <a class="text-[rgba(153,153,153,1)]" href="#">Contact Us</a>
+          </div>
+          <div>
+            <a class="flex gap-[5px] text-white" href="#">
+              <img src="./assets/icon/Group.svg" alt="" />
+              (219) 555-0114
+            </a>
+          </div>
+        </div>
+      </nav>
+      <nav
+        class="w-full h-[120px]"
+        style="background-image: url(./assets/img/Breadcrumbs.svg)"></nav>
+    </header>
+    <main class="w-[1320px] container mx-auto mt-[152px]">
+      <section class="w-[1320px] h-[556px] flex gap-[24px]">
+        <div class="w-[648px] h-[556px] flex gap-[12px]">
+          <div
+            class="w-[80px] h-[556px] flex flex-col items-center justify-between">
+            <img
+              class="w-[24px]"
+              src="./assets/icon/Arrow---Down-2 2.svg"
+              alt="" />
+            <div
+              class="w-[80px] h-[396px] flex flex-col justify-between items-center">
+              <div
+                class="w-[80px] h-[90px] flex items-center justify-center">
+                <img class="thumb h-[90px]" src="./assets/img/chines.svg" alt="" />
+              </div>
+              <div class="w-[80px] h-[90px] flex items-center justify-center">
+                <img
+                  class="thumb"
+                  src="./assets/img/Product Image(1).svg"
+                  alt="" />
+              </div>
+              <div class="w-[80px] h-[90px] flex items-center justify-center">
+                <img
+                  class="thumb"
+                  src="./assets/img/Product Image(2).svg"
+                  alt="" />
+              </div>
+              <div class="w-[80px] h-[90px] flex items-center justify-center">
+                <img
+                  class="thumb"
+                  src="./assets/img/Product Image(3).svg"
+                  alt="" />
+              </div>
+            </div>
+            <img
+              class="w-[24px]"
+              src="./assets/icon/Arrow---Down-2 1.svg"
+              alt="" />
+          </div>
+          <div
+            id="main"
+            class="w-[556px] h-[556px] flex items-center justify-center bg-no-repeat bg-center bg-cover"
+            style="background-image: url(./assets/img/chines.svg)"></div>
+        </div>
+        <div class="w-[648px] h-[501px]">
+          <div class="w-[648px] h-[152px]">
+            <div class="w-[409px] h-[76px]">
+              <div class="w-full h-[43px] flex justify-between items-center">
+                <h1 class="text-[36px] font-[600] text-[rgba(26,26,26,1)]">
+                  Chinese Cabbage
+                </h1>
+                <div
+                  class="w-[71px] h-[29px] bg-[rgba(32,181,38,0.2)] rounded-[4px]">
+                  <h1
+                    class="text-[rgba(44,116,47,1)] text-[14px] font-normal flex items-center justify-center">
+                    In Stock
+                  </h1>
+                </div>
+              </div>
+              <div
+                class="w-[275px] h-[21px] mt-[12px] flex items-center justify-between">
+                <img src="./assets/icon/Rating(2).svg" alt="" />
+                <div
+                  class="w-[7px] h-[7px] rounded-[50%] bg-[rgba(179,179,179,1)]"></div>
+                <h1 class="text-[14px] font-[500] text-[rgba(51,51,51,1)]">
+                  SKU:
+                  <span
+                    class="text-[14px] font-normal text-[rgba(102,102,102,1)]">
+                    2,51,594
+                  </span>
+                </h1>
+              </div>
+            </div>
+            <div class="w-[230px] h-[36px] mt-[20px] flex items-center">
+              <h1
+                class="line-through text-[20px] font-normal text-[rgba(179,179,179,1)]">
+                $48.00
+              </h1>
+              <h1
+                class="text-[24px] font-[500] text-[rgba(44,116,47,1)] ml-[4px]">
+                $17.28
+              </h1>
+              <div
+                class="w-[74px] h-[27px] bg-[rgba(234,75,72,0.1)] rounded-[30px] flex items-center justify-center ml-[12px]">
+                <h1 class="text-[14px] font-[500] text-[rgba(234,75,72,1)]">
+                  64% Off
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-[135px] mt-[24px]">
+            <div class="w-full h-[56px] flex justify-between items-center">
+              <div class="w-[109px] h-[56px] flex items-center gap-[17px]">
+                <h1 class="text-[14px] font-normal text-[rgba(26,26,26,1)]">
+                  Brand:
+                </h1>
+                <img src="./assets/img/Group 19.svg" alt="" />
+              </div>
+              <div class="w-[264px] h-[40px] flex items-center">
+                <h1 class="text-[14px] font-normal text-[rgba(26,26,26,1)]">
+                  Share item:
+                </h1>
+                <div class="w-[175px] h-[40px] flex gap-[5px]">
+                  <div
+                    class="w-[40px] h-[40px] rounded-[50%] hover:bg-green-500 duration-500 flex items-center justify-center">
+                    <img
+                      class="w-[18px]"
+                      src="./assets/icon/facebook.png"
+                      alt="" />
+                  </div>
+                  <div
+                    class="w-[40px] h-[40px] rounded-[50%] hover:bg-green-500 duration-500 flex items-center justify-center">
+                    <img
+                      class="w-[18px]"
+                      src="./assets/icon/twitter 1.svg"
+                      alt="" />
+                  </div>
+                  <div
+                    class="w-[40px] h-[40px] rounded-[50%] hover:bg-green-500 duration-500 flex items-center justify-center">
+                    <img
+                      class="w-[18px]"
+                      src="./assets/icon/pinterest 1.svg"
+                      alt="" />
+                  </div>
+                  <div
+                    class="w-[40px] h-[40px] rounded-[50%] hover:bg-green-500 duration-500 flex items-center justify-center">
+                    <img
+                      class="w-[18px]"
+                      src="./assets/icon/instagram 1.svg"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-[568px] h-[63px] mt-[16px]">
+              <p class="text-[14px] font-normal text-[rgba(128,128,128,1)]">
+                Class aptent taciti sociosqu ad litora torquent per conubia
+                nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel
+                consequat nec, ultrices et ipsum. Nulla varius magna a consequat
+                pulvinar.
+              </p>
+            </div>
+          </div>
+          <div class="w-full h-[88px] mt-[24px] flex items-center">
+            <div
+              class="w-full h-[46px] top-[377px] flex items-center justify-between gap-[10px]">
+              <div
+                class="w-[124px] h-[50px] bg-[rgba(230,230,230,1)] rounded-[170px] flex justify-around items-center">
+                <button id="minus" class="text-[rgba(102,102,102,1)]">-</button>
+                <h1 id="count" class="text-[rgba(26,26,26,1)] text-[16px] font-normal">
+                  0
+                </h1>
+                <button id="plus" class="text-[rgba(102,102,102,1)]">+</button>
+              </div>
+              <button
+                class="w-[371px] h-[45px] bg-green-500 rounded-[43px] text-white text-[14px] font-[600] flex items-center justify-center gap-[12px]">
+                Add to Cart
+                <img src="./assets/icon/Rectangle(3).svg" alt="" />
+              </button>
+              <img class="w-[20px]" src="./assets/icon/Heart.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-[1320px] h-[523px] container mx-auto">
+        <div
+          class="w-full h-[56px] flex items-center justify-center gap-[32px]">
+          <h1
+            class="text-[16px] font-[500] text-[rgba(26,26,26,1)] underline decoration-[rgba(32,181,38,1)] underline-offset-[12px]">
+            Descriptions
+          </h1>
+          <h1 class="text-[16px] font-[500] text-[rgba(128,128,128,1)]">
+            Additional Information
+          </h1>
+          <h1 class="text-[16px] font-[500] text-[rgba(128,128,128,1)]">
+            Customer Feedback
+          </h1>
+        </div>
+        <div class="w-full h-[435px] mt-[32px] flex justify-between">
+          <div class="w-[648px] h-[435px]">
+            <div class="w-full h-[231px] flex flex-col">
+              <p class="text-[14px] font-normal text-[rgba(128,128,128,1)]">
+                Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet
+                at posuere ac, viverra at mauris. Maecenas tincidunt ligula a
+                sem vestibulum pharetra. Maecenas auctor tortor lacus, nec
+                laoreet nisi porttitor vel. Etiam tincidunt metus vel dui
+                interdum sollicitudin. Mauris sem ante, vestibulum nec orci
+                vitae, aliquam mollis lacus. Sed et condimentum arcu, id
+                molestie tellus. Nulla facilisi. Nam scelerisque vitae justo a
+                convallis. Morbi urna ipsum, placerat quis commodo quis, egestas
+                elementum leo. Donec convallis mollis enim. Aliquam id mi quam.
+                Phasellus nec fringilla elit.
+              </p>
+              <p
+                class="text-[14px] font-normal text-[rgba(128,128,128,1)] mt-[30px]">
+                Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui.
+                Sed iaculis, metus faucibus elementum tincidunt, turpis mi
+                viverra velit, pellentesque tristique neque mi eget nulla. Proin
+                luctus elementum neque et pharetra.
+              </p>
+            </div>
+            <div class="w-full h-[122px] flex flex-col gap-y-[14px] mt-[20px]">
+              <p
+                class="flex items-center text-[14px] font-normal text-[rgba(128,128,128,1)] gap-[8px]">
+                <img src="./assets/icon/Check.svg" alt="" />
+                100 g of fresh leaves provides.
+              </p>
+              <p
+                class="flex items-center text-[14px] font-normal text-[rgba(128,128,128,1)] gap-[8px]">
+                <img src="./assets/icon/Check.svg" alt="" />
+                Aliquam ac est at augue volutpat elementum.
+              </p>
+              <p
+                class="flex items-center text-[14px] font-normal text-[rgba(128,128,128,1)] gap-[8px]">
+                <img src="./assets/icon/Check.svg" alt="" />
+                Quisque nec enim eget sapien molestie.
+              </p>
+              <p
+                class="flex items-center text-[14px] font-normal text-[rgba(128,128,128,1)] gap-[8px]">
+                <img src="./assets/icon/Check.svg" alt="" />
+                Proin convallis odio volutpat finibus posuere.
+              </p>
+            </div>
+            <div class="w-full h-[42px] mt-[20px]">
+              <h1 class="text-[14px] font-normal text-[rgba(128,128,128,1)]">
+                Cras et diam maximus, accumsan sapien et, sollicitudin velit.
+                Nulla blandit eros non turpis lobortis iaculis at ut massa.
+              </h1>
+            </div>
+          </div>
+          <div class="w-[536px] h-[435px]">
+            <div
+              class="w-full h-[300px] bg-no-repeat bg-center bg-contain flex justify-center"
+              style="background-image: url(./assets/img/kimdur.svg)">
+              <img class="w-[50px]" src="./assets/icon/Play.svg" alt="" />
+            </div>
+            <div
+              class="w-full h-[95px] flex mt-[32px] items-center border rounded-[6px] justify-around">
+              <div class="w-[242px] h-[47px] flex items-center justify-between">
+                <img
+                  class="w-[32px]"
+                  src="./assets/icon/price-tag 1.svg"
+                  alt="" />
+                <div class="w-[198px] h-full">
+                  <h1 class="text-[14px] font-[500] text-[rgba(26,26,26,1)]">
+                    64% Discount
+                  </h1>
+                  <h1
+                    class="text-[13px] font-normal text-[rgba(128,128,128,1)]">
+                    Save your 64% money with us
+                  </h1>
+                </div>
+              </div>
+              <div class="w-[242px] h-[47px] flex items-center justify-between">
+                <img class="w-[32px]" src="./assets/icon/leaf 1.svg" alt="" />
+                <div class="w-[198px] h-full">
+                  <h1 class="text-[14px] font-[500] text-[rgba(26,26,26,1)]">
+                    100% Organic
+                  </h1>
+                  <h1
+                    class="text-[13px] font-normal text-[rgba(128,128,128,1)]">
+                    100% Organic Vegetables
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-[1320px] h-[477px] container mx-auto mt-[80px]">
+        <div class="w-full h-[38px] flex items-center justify-center">
+          <h1 class="text-[32px] font-[600] text-[rgba(26,26,26,1)]">
+            Related Products
+          </h1>
+        </div>
+
+        <div class="w-[1319px] h-[338px] flex justify-between mt-[32px]">
+          <div
+            class="w-[266px] h-[327px] border border-white rounded-[8px] group hover:border hover:border-green-600 duration-300 transition-colors ease-in-out">
+            <div
+              class="w-[264px] h-[240px] relative rounded-[8px]"
+              style="background-image: url(./assets/img/Product\ Image.svg)">
+              <div
+                class="w-[80px] h-[27px] bg-red-500 rounded-[4px] absolute top-[16px] left-[16px] flex items-center justify-center">
+                <p class="text-white text-[14px] font-[500]">Sale 50%</p>
+              </div>
+              <div
+                class="w-[40px] h-[40px] items-center justify-center absolute top-[16px] left-[208px] bg-white rounded-[50%] hidden group-hover:flex transition-all duration-300">
+                <img class="w-[20px]" src="./assets/icon/Heart.svg" alt="" />
+              </div>
+              <div
+                class="w-[40px] h-[40px] justify-center items-center absolute top-[62px] left-[208px] bg-white rounded-[50%] hidden group-hover:flex transition-all duration-300">
+                <img class="w-[20px]" src="./assets/icon/Eye 1.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="w-[264px] h-[87px] group flex items-center justify-center gap-[90px]">
+              <div>
+                <p class="text-[14px] font-[400] text-[rgba(77,77,77,1)]">
+                  Green Apple
+                </p>
+                <h3 class="text-[16px] font-[500] text-[rgba(26,26,26,1)]">
+                  $14.99
+                  <span
+                    class="text-[16px] font-normal text-[rgba(153,153,153,1)]">
+                    $20.99
+                  </span>
+                </h3>
+                <img class="mt-[3px]" src="./assets/icon/Rating.svg" alt="" />
+              </div>
+              <div
+                class="w-[40px] h-[40px] rounded-[50%] flex justify-center items-center group-hover:bg-green-500 duration-300 transition-colors ease-in-out">
+                <img src="./assets/icon/Bag.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[266px] h-[327px] border border-white rounded-[8px] group hover:border hover:border-green-600 duration-300 transition-colors ease-in-out">
+            <div
+              class="w-[264px] h-[240px] relative rounded-[8px]"
+              style="background-image: url(./assets/img/Image\(7\).svg)">
+              <div
+                class="w-[40px] h-[40px] items-center justify-center absolute top-[16px] left-[208px] bg-white rounded-[50%] hidden group-hover:flex transition-all duration-300">
+                <img class="w-[20px]" src="./assets/icon/Heart.svg" alt="" />
+              </div>
+              <div
+                class="w-[40px] h-[40px] justify-center items-center absolute top-[62px] left-[208px] bg-white rounded-[50%] hidden group-hover:flex transition-all duration-300">
+                <img class="w-[20px]" src="./assets/icon/Eye 1.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="w-[264px] h-[87px] group flex items-center justify-center gap-[90px]">
+              <div>
+                <p class="text-[14px] font-[400] text-[rgba(77,77,77,1)]">
+                  Chanise Cabbage
+                </p>
+                <h3 class="text-[16px] font-[500] text-[rgba(26,26,26,1)]">
+                  $14.99
+                </h3>
+                <img class="mt-[3px]" src="./assets/icon/Rating.svg" alt="" />
+              </div>
+              <div
+                class="w-[40px] h-[40px] rounded-[50%] flex justify-center items-center group-hover:bg-green-500 duration-300 transition-colors ease-in-out">
+                <img src="./assets/icon/Bag.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[266px] h-[327px] border border-white rounded-[8px] group hover:border hover:border-green-600 duration-300 transition-colors ease-in-out">
+            <div
+              class="w-[264px] h-[240px] relative rounded-[8px]"
+              style="background-image: url(./assets/img/Image\(8\).svg)">
+              <div
+                class="w-[40px] h-[40px] items-center justify-center absolute top-[16px] left-[208px] bg-white rounded-[50%] hidden group-hover:flex transition-all duration-300">
+                <img class="w-[20px]" src="./assets/icon/Heart.svg" alt="" />
+              </div>
+              <div
+                class="w-[40px] h-[40px] justify-center items-center absolute top-[62px] left-[208px] bg-white rounded-[50%] hidden group-hover:flex transition-all duration-300">
+                <img class="w-[20px]" src="./assets/icon/Eye 1.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="w-[264px] h-[87px] group flex items-center justify-center gap-[90px]">
+              <div>
+                <p class="text-[14px] font-[400] text-[rgba(44,116,47,1)]">
+                  Green Capsicum
+                </p>
+                <h3 class="text-[16px] font-[500] text-[rgba(26,26,26,1)]">
+                  $14.99
+                </h3>
+                <img class="mt-[3px]" src="./assets/icon/Rating.svg" alt="" />
+              </div>
+              <div
+                class="w-[40px] h-[40px] rounded-[50%] flex justify-center items-center group-hover:bg-green-500 duration-300 transition-colors ease-in-out">
+                <img src="./assets/icon/Bag.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[266px] h-[327px] border border-white rounded-[8px] group hover:border hover:border-green-600 duration-300 transition-colors ease-in-out">
+            <div
+              class="w-[264px] h-[240px] relative rounded-[8px] bg-no-repeat bg-center bg-contain"
+              style="background-image: url(./assets/img/LadiesFinger.svg)">
+              <div
+                class="w-[40px] h-[40px] items-center justify-center absolute top-[16px] left-[208px] bg-white rounded-[50%] hidden group-hover:flex transition-all duration-300">
+                <img class="w-[20px]" src="./assets/icon/Heart.svg" alt="" />
+              </div>
+              <div
+                class="w-[40px] h-[40px] justify-center items-center absolute top-[62px] left-[208px] bg-white rounded-[50%] hidden group-hover:flex transition-all duration-300">
+                <img class="w-[20px]" src="./assets/icon/Eye 1.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="w-[264px] h-[87px] group flex items-center justify-center gap-[90px]">
+              <div>
+                <p class="text-[14px] font-[400] text-[rgba(77,77,77,1)]">
+                  Ladies Finger
+                </p>
+                <h3 class="text-[16px] font-[500] text-[rgba(26,26,26,1)]">
+                  $14.99
+                </h3>
+                <img class="mt-[3px]" src="./assets/icon/Rating.svg" alt="" />
+              </div>
+              <div
+                class="w-[40px] h-[40px] rounded-[50%] flex justify-center items-center group-hover:bg-green-500 duration-300 transition-colors ease-in-out">
+                <img src="./assets/icon/Bag.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="w-full h-[530px] mt-[60px] container mx-auto">
+      <div class="w-[1320px] h-[162px] flex container mx-auto items-center">
+        <div class="w-[448px] h-[82px]">
+          <h1 class="text-[24px] font-[600] text-[rgba(26,26,26,1)]">
+            Subcribe our Newsletter
+          </h1>
+          <p class="text-[14px] font-normal text-[rgba(153,153,153,1)]">
+            Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
+            Phasellus imperdiet elit eu magna.
+          </p>
+        </div>
+        <div class="w-[536px] h-[52px] flex ml-[112px] relative">
+          <input
+            class="text-[14px] font-normal w-[492px] h-[52px] outline-none"
+            type="text"
+            placeholder="Your email address" />
+          <button
+            class="text-white w-[162px] h-[52px] bg-green-500 rounded-[43px] left-[374px] absolute">
+            Subscribe
+          </button>
+        </div>
+        <div class="w-[184px] h-[40px] flex ml-[40px] gap-[8px]">
+          <div
+            class="w-[40px] h-[40px] rounded-[50%] hover:bg-green-500 duration-500 flex items-center justify-center">
+            <img class="w-[18px]" src="./assets/icon/facebook.png" alt="" />
+          </div>
+          <div
+            class="w-[40px] h-[40px] rounded-[50%] hover:bg-green-500 duration-500 flex items-center justify-center">
+            <img class="w-[18px]" src="./assets/icon/twitter 1.svg" alt="" />
+          </div>
+          <div
+            class="w-[40px] h-[40px] rounded-[50%] hover:bg-green-500 duration-500 flex items-center justify-center">
+            <img class="w-[18px]" src="./assets/icon/pinterest 1.svg" alt="" />
+          </div>
+          <div
+            class="w-[40px] h-[40px] rounded-[50%] hover:bg-green-500 duration-500 flex items-center justify-center">
+            <img class="w-[18px]" src="./assets/icon/instagram 1.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-[368px] bg-[rgba(26,26,26,1)] relative">
+        <div
+          class="w-[1320px] h-[168px] flex justify-between absolute left-[112px] top-[60px]">
+          <div class="w-[336px] h-[166px]flex flex-col justify-between">
+            <img
+              class="w-[183px]"
+              src="./assets/img/Logo (copy 1).svg"
+              alt="" />
+            <p
+              class="text-[rgba(128,128,128,1)] text-[14px] font-normal w-[300px] mt-[8px]">
+              Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis
+              dui, eget bibendum magna congue nec.
+            </p>
+            <div class="w-[282px] h-[33px] flex gap-[16px] mt-[25px]">
+              <a
+                class="text-white underline decoration-[rgba(32,181,38,1)] underline-offset-[12px] text-[14px] font-[500]"
+                href="#">
+                (219) 555-0114
+              </a>
+              <p class="text-[16px] font-normal text-[rgba(128,128,128,1)]">
+                or
+              </p>
+              <a
+                class="text-white underline decoration-[rgba(32,181,38,1)] underline-offset-[12px] text-[14px] font-[500]"
+                href="#">
+                Proxy@gmail.com
+              </a>
+            </div>
+          </div>
+          <div class="w-[95px] h-[164px]">
+            <h1 class="text-white text-[16px] font-[500]">My Account</h1>
+            <div
+              class="w-[92px] h-[120px] mt-[20px] flex flex-col justify-between">
+              <p
+                class="text-[14px] font-normal text-[rgba(153,153,153,1)] hover:text-white duration-300 pt-[]">
+                My Account
+              </p>
+              <p
+                class="text-[14px] font-normal text-[rgba(153,153,153,1)] hover:text-white duration-300">
+                Order History
+              </p>
+              <p
+                class="text-[14px] font-normal text-[rgba(153,153,153,1)] hover:text-white duration-300">
+                Shoping Cart
+              </p>
+              <p
+                class="text-[14px] font-normal text-[rgba(153,153,153,1)] hover:text-white duration-300">
+                Wishlist
+              </p>
+            </div>
+          </div>
+          <div class="w-[130px] h-[164px]">
+            <h1 class="text-white text-[16px] font-[500]">Helps</h1>
+            <div
+              class="w-[130px] h-[120px] mt-[20px] flex flex-col justify-between">
+              <p
+                class="text-[14px] font-normal text-[rgba(153,153,153,1)] hover:text-white duration-300 pt-[]">
+                Contact
+              </p>
+              <p
+                class="text-[14px] font-normal text-[rgba(153,153,153,1)] hover:text-white duration-300">
+                Faqs
+              </p>
+              <p
+                class="text-[14px] font-normal text-[rgba(153,153,153,1)] hover:text-white duration-300">
+                Terms & Condition
+              </p>
+              <p
+                class="text-[14px] font-normal text-[rgba(153,153,153,1)] hover:text-white duration-300">
+                Privacy Policy
+              </p>
+            </div>
+          </div>
+          <div class="w-[82px] h-[164px]">
+            <h1 class="text-white text-[16px] font-[500]">Proxy</h1>
+            <div
+              class="w-full h-[120px] mt-[20px] flex flex-col justify-between">
+              <p
+                class="text-[14px] font-normal text-[rgba(153,153,153,1)] hover:text-white duration-300 pt-[]">
+                About
+              </p>
+              <p
+                class="text-[14px] font-normal text-[rgba(153,153,153,1)] hover:text-white duration-300">
+                Shop
+              </p>
+              <p
+                class="text-[14px] font-normal text-[rgba(153,153,153,1)] hover:text-white duration-300">
+                Product
+              </p>
+              <p
+                class="text-[14px] font-normal text-[rgba(153,153,153,1)] hover:text-white duration-300">
+                Track Order
+              </p>
+            </div>
+          </div>
+          <div class="w-[130px] h-[164px]">
+            <h1 class="text-white text-[16px] font-[500]">Categories</h1>
+            <div
+              class="w-[130px] h-[120px] mt-[20px] flex flex-col justify-between">
+              <p
+                class="text-[14px] font-normal text-[rgba(153,153,153,1)] hover:text-white duration-300 pt-[]">
+                Fruit & Vegetables
+              </p>
+              <p
+                class="text-[14px] font-normal text-[rgba(153,153,153,1)] hover:text-white duration-300">
+                Meat & Fish
+              </p>
+              <p
+                class="text-[14px] font-normal text-[rgba(153,153,153,1)] hover:text-white duration-300">
+                Bread & Bakery
+              </p>
+              <p
+                class="text-[14px] font-normal text-[rgba(153,153,153,1)] hover:text-white duration-300">
+                Beauty & Health
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-[1320px] h-[80px] absolute bottom-[0px] left-[112px] flex justify-between items-center border-t-2 border-t-[rgba(51,51,51,1)]">
+          <div class="w-[355px] h-[21px]">
+            <a class="w-[14px] font-normal text-[rgba(128,128,128,1)]" href="#">
+              Ecobazar eCommerce © 2021. All Rights Reserved
+            </a>
+          </div>
+          <div class="w-[277px] h-[32px] flex">
+            <img src="./assets/icon/Method=ApplePay.svg" alt="" />
+            <img src="./assets/icon/Method=Visa.svg" alt="" />
+            <img src="./assets/icon/Method=Discover.svg" alt="" />
+            <img src="./assets/icon/Method=Mastercard.svg" alt="" />
+            <img src="./assets/icon/Cart (copy 1).svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
