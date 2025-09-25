@@ -10,18 +10,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="w-full">
+    <header class="w-full h-[195px]">
       <nav
-        class="flex flex-col md:flex-row items-center justify-between max-w-[1320px] w-full mx-auto py-2 px-4">
-        <div class="mb-2 md:mb-0">
-          <p class="flex items-center text-gray-600 text-xs gap-2">
+        class="flex w-[1319px] h-[42px] items-center justify-between container mx-auto">
+        <div>
+          <p
+            class="flex text-[rgba(102,102,102,1)] text-[12px] font-normal gap-[8px]">
             <img src="./assets/icon/Map Pin.svg" alt="" />
             Store Location: Lincoln- 344, Illinois, Chicago, USA
           </p>
         </div>
-        <div class="flex flex-col sm:flex-row items-center gap-2 md:gap-5">
+        <div class="flex gap-[20px]">
           <select
-            class="bg-white text-gray-600 text-xs font-normal px-2 py-1 rounded"
+            class="bg-white text-[rgba(102,102,102,1)] text-[12px] font-normal"
             name="lang"
             id="language">
             <option value="Eng">Eng</option>
@@ -29,63 +30,92 @@
             <option value="Uzb">Uzb</option>
           </select>
           <select
-            class="bg-white text-gray-600 text-xs font-normal px-2 py-1 rounded"
+            class="bg-white text-[rgba(102,102,102,1)] mr-[20px] text-[12px] font-normal"
             name="currency"
             id="">
             <option value="">USD</option>
             <option value="">RUB</option>
             <option value="">UZS</option>
           </select>
-          <div class="flex gap-2 md:gap-2 items-center">
-            <button class="text-gray-600 text-xs font-normal">Sign In</button>
-            <span class="text-gray-600">/</span>
-            <button class="text-gray-600 text-xs font-normal">Sign Up</button>
+          <div class="flex gap-[8px]">
+            <button class="text-[rgba(102,102,102,1)] text-[12px] font-normal">
+              Sign In
+            </button>
+            <h1 class="text-[rgba(102,102,102,1)]">/</h1>
+            <button class="text-[rgba(102,102,102,1)] text-[12px] font-normal">
+              Sign Up
+            </button>
           </div>
         </div>
       </nav>
       <nav
-        class="flex flex-col md:flex-row justify-between items-center max-w-[1320px] w-full mx-auto py-4 px-4 gap-3 md:gap-0">
+        class="w-[1319px] h-[93px] container mx-auto flex justify-between items-center">
         <div>
-          <a href="./index.html">
-            <img src="./assets/img/Logo.svg" alt="" class="w-32 md:w-auto" />
-          </a>
+          <a href="./index.html"><img src="./assets/img/Logo.svg" alt="" /></a>
         </div>
-        <div class="w-full md:w-[498px] h-[45px] relative flex">
-          <span class="absolute left-4 top-3">
+        <div class="w-[498px] h-[45px] relative flex">
+          <span class="absolute left-[16px] top-[12px]">
             <img src="./assets/icon/Search.svg" alt="" />
           </span>
           <input
-            class="pl-12 w-full h-full rounded-l-md border focus:outline-none"
+            class="pl-[44px] w-[400px] h-[45px] rounded-tl-[6px] rounded-bl-[6px] border focus:outline-none"
             type="text"
             placeholder="Search" />
           <button
-            class="w-[98px] h-full bg-green-600 text-white font-semibold rounded-r-md">
+            class="w-[98px] h-[45px] bg-[rgba(0,178,7,1)] text-[white] font-[600] rounded-tr-[6px] rounded-br-[6px]">
             Search
           </button>
         </div>
-        <div class="flex gap-2 md:gap-3 items-center">
+        <div class="flex gap-[6px]">
           <img src="./assets/icon/Heart.svg" alt="" />
-          <hr class="hidden md:block border-gray-300 h-6" />
+          <hr />
           <img src="./assets/icon/Cart.svg" alt="" />
-          <div class="flex flex-col text-xs">
-            <p class="text-gray-500">Shopping cart:</p>
-            <p class="text-gray-800 font-medium">$57.00</p>
+          <div class="flex flex-col">
+            <p class="text-[11px] font-normal text-[rgba(77,77,77,1)]">
+              Shopping cart:
+            </p>
+            <p class="text-[14px] font-[500] text-[rgba(26,26,26,1)]">$57.00</p>
           </div>
         </div>
       </nav>
-      <nav class="w-full bg-gray-800">
+      <nav class="w-full h-[60px] bg-[rgba(51,51,51,1)]">
         <div
-          class="flex flex-col md:flex-row justify-between items-center max-w-[1320px] w-full mx-auto py-3 px-4 gap-2 md:gap-0">
-          <div class="flex flex-col sm:flex-row gap-2 md:gap-8 items-center">
-            <a href="index.html" class="text-white">Home</a>
-            <a href="#" class="text-gray-400">Shop</a>
-            <a href="#" class="text-gray-400">Pages</a>
-            <a href="#" class="text-gray-400">Blog</a>
-            <a href="#" class="text-gray-400">About Us</a>
-            <a href="#" class="text-gray-400">Contact Us</a>
+          class="w-[1319px] h-[60px] container mx-auto flex justify-between items-center">
+          <div class="flex gap-[32px]">
+            <a href="#">
+              <select class="bg-transparent text-white" name="Home" id="">
+                <a href="index.html"><option value="">Home</option></a>
+              </select>
+            </a>
+            <a href="#">
+              <select
+                class="bg-transparent text-[rgba(153,153,153,1)]"
+                name="Shop"
+                id="">
+                <option value="">Shop</option>
+              </select>
+            </a>
+            <a href="#">
+              <select
+                class="bg-transparent text-[rgba(153,153,153,1)]"
+                name="Pages"
+                id="">
+                <option value="">Pages</option>
+              </select>
+            </a>
+            <a href="#">
+              <select
+                class="bg-transparent text-[rgba(153,153,153,1)]"
+                name="Blog"
+                id="">
+                <option value="">Blog</option>
+              </select>
+            </a>
+            <a class="text-[rgba(153,153,153,1)]" href="#">About Us</a>
+            <a class="text-[rgba(153,153,153,1)]" href="#">Contact Us</a>
           </div>
           <div>
-            <a class="flex gap-1 items-center text-white" href="#">
+            <a class="flex gap-[5px] text-white" href="#">
               <img src="./assets/icon/Group.svg" alt="" />
               (219) 555-0114
             </a>
@@ -95,42 +125,50 @@
     </header>
     <main class="w-full">
       <section
-        class="w-full max-w-[1320px] mx-auto mt-6 flex flex-col lg:flex-row gap-6 px-4">
+        class="w-[1319px] h-[600px] container mx-auto mt-[24px] flex gap-[24px]">
         <div
-          class="w-full lg:w-[872px] h-[600px] bg-cover bg-center relative"
-          style="background-image: url(./assets/img/Bannar\ Big.svg)"></div>
-        <div class="w-full lg:w-[423px] flex flex-col gap-4">
+          class="w-[872px] h-[600px]"
+          style="background-image: url(./assets/img/Bannar\ Big.svg)">
+          <button
+            class="w-[191px] h-[51px] bg-white rounded-[53px] mt-[394px] ml-[60px] text-[16px] text-[rgba(0,178,7,1)] font-[600] flex items-center justify-center gap-[16px]">
+            Shop now
+            <img class="w-[15px]" src="./assets/icon/Group(1).svg" alt="" />
+          </button>
+        </div>
+        <div class="w-[423px] h-[600] mt-[-26px]">
           <div
-            class="w-full h-[288px] bg-cover bg-center relative"
+            class="w-[423px] h-[288px]"
             style="background-image: url(./assets/img/BG.svg)">
-            <div
-              class="absolute top-8 left-8 w-[156px] h-[138px] flex flex-col">
-              <h3 class="text-[14px] font-medium text-gray-900">Summer Sale</h3>
-              <h1 class="text-2xl lg:text-3xl font-semibold text-gray-900">
+            <div class="w-[156px] h-[138px] m-[32px]">
+              <h3 class="text-[14px] font-[500] text-[rgba(26,26,26,1)]">
+                Summer Sale
+              </h3>
+              <h1 class="text-[32px] font-[600] text-[rgba(26,26,26,1)]">
                 75% OFF
               </h1>
-              <p class="text-[14px] text-gray-600 mt-3">
+              <p
+                class="text-[14px] font-normal text-[rgba(102,102,102,1)] mt-[12px]">
                 Only Fruit & Vegetable
               </p>
               <button
-                class="flex text-green-600 text-base font-semibold gap-3 mt-6 items-center">
+                class="flex text-[rgba(0,178,7,1)] text-[16px] font-[600] gap-[12px] mt-[24px]">
                 Shop Now
                 <img src="./assets/icon/Group(1).svg" alt="" />
               </button>
             </div>
           </div>
           <div
-            class="w-full h-[288px] flex items-center justify-center bg-cover bg-center relative"
+            class="w-[423px] h-[288px] flex items-center mt-[18px] justify-center"
             style="background-image: url(./assets/img/BG2.svg)">
             <div
-              class="w-[343px] h-[153px] flex flex-col justify-center items-center text-center">
-              <h3 class="text-[14px] font-medium text-white">Best Deal</h3>
+              class="w-[343px] h-[153px] flex flex-col justify-center items-center">
+              <h3 class="text-[14px] font-[500] text-white">Best Deal</h3>
               <h1
-                class="text-white text-2xl lg:text-3xl font-semibold w-full lg:w-[300px]">
+                class="text-white text-[32px] font-[600] w-[300px] text-center">
                 Special Products Deal of the Month
               </h1>
               <button
-                class="flex text-green-600 text-base font-semibold gap-3 mt-4 items-center">
+                class="flex text-[rgba(0,178,7,1)] text-[16px] font-[600] gap-[12px]">
                 Shop Now
                 <img src="./assets/icon/Group(1).svg" alt="" />
               </button>
@@ -139,63 +177,47 @@
         </div>
       </section>
       <section
-        class="max-w-[1320px] h-auto container mx-auto mt-6 flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-8 px-4">
-        <div class="w-full sm:w-[306px] h-auto flex gap-4">
-          <div>
-            <img src="./assets/icon/delivery-truck 1.svg" alt="Free Shipping" />
-          </div>
-          <div class="w-full sm:w-[250px] h-auto">
-            <h3
-              class="text-base sm:text-lg font-semibold text-[rgba(26,26,26,1)]">
+        class="w-[1319px] h-[128px] container mx-auto mt-[24px] flex justify-center items-center">
+        <div class="w-[306px] h-[48px] flex gap-[16px]">
+          <div><img src="./assets/icon/delivery-truck 1.svg" alt="" /></div>
+          <div class="w-[250px] h-[48px]">
+            <h3 class="text-[16px] font-[600] text-[rgba(26,26,26,1)]">
               Free Shipping
             </h3>
-            <p
-              class="text-sm sm:text-[14px] font-normal text-[rgba(153,153,153,1)]">
+            <p class="text-[14px] font-normal text-[rgba(153,153,153,1)]">
               Free shipping on all your order
             </p>
           </div>
         </div>
-        <div class="w-full sm:w-[306px] h-auto flex gap-4">
-          <div>
-            <img src="./assets/icon/headphones 1.svg" alt="Customer Support" />
-          </div>
-          <div class="w-full sm:w-[250px] h-auto">
-            <h3
-              class="text-base sm:text-lg font-semibold text-[rgba(26,26,26,1)]">
+        <div class="w-[306px] h-[48px] flex gap-[16px]">
+          <div><img src="./assets/icon/headphones 1.svg" alt="" /></div>
+          <div class="w-[250px] h-[48px]">
+            <h3 class="text-[16px] font-[600] text-[rgba(26,26,26,1)]">
               Customer Support 24/7
             </h3>
-            <p
-              class="text-sm sm:text-[14px] font-normal text-[rgba(153,153,153,1)]">
+            <p class="text-[14px] font-normal text-[rgba(153,153,153,1)]">
               Instant access to Support
             </p>
           </div>
         </div>
-        <div class="w-full sm:w-[306px] h-auto flex gap-4">
-          <div>
-            <img src="./assets/icon/shopping-bag.svg" alt="Secure Payment" />
-          </div>
-          <div class="w-full sm:w-[250px] h-auto">
-            <h3
-              class="text-base sm:text-lg font-semibold text-[rgba(26,26,26,1)]">
+        <div class="w-[306px] h-[48px] flex gap-[16px]">
+          <div><img src="./assets/icon/shopping-bag.svg" alt="" /></div>
+          <div class="w-[250px] h-[48px]">
+            <h3 class="text-[16px] font-[600] text-[rgba(26,26,26,1)]">
               100% Secure Payment
             </h3>
-            <p
-              class="text-sm sm:text-[14px] font-normal text-[rgba(153,153,153,1)]">
+            <p class="text-[14px] font-normal text-[rgba(153,153,153,1)]">
               We ensure your money is save
             </p>
           </div>
         </div>
-        <div class="w-full sm:w-[306px] h-auto flex gap-4">
-          <div>
-            <img src="./assets/icon/package.svg" alt="Money-Back Guarantee" />
-          </div>
-          <div class="w-full sm:w-[250px] h-auto">
-            <h3
-              class="text-base sm:text-lg font-semibold text-[rgba(26,26,26,1)]">
+        <div class="w-[306px] h-[48px] flex gap-[16px]">
+          <div><img src="./assets/icon/package.svg" alt="" /></div>
+          <div class="w-[250px] h-[48px]">
+            <h3 class="text-[16px] font-[600] text-[rgba(26,26,26,1)]">
               Money-Back Guarantee
             </h3>
-            <p
-              class="text-sm sm:text-[14px] font-normal text-[rgba(153,153,153,1)]">
+            <p class="text-[14px] font-normal text-[rgba(153,153,153,1)]">
               30 Days Money-Back Guarantee
             </p>
           </div>
