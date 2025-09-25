@@ -12,15 +12,15 @@
   <body>
     <header class="w-full h-[195px]">
       <nav
-        class="flex w-[1319px] h-[42px] items-center justify-between container mx-auto">
-        <div>
+        class="flex flex-col sm:flex-row w-full sm:w-[1319px] h-auto sm:h-[42px] items-start sm:items-center justify-between container mx-auto p-2 sm:p-0">
+        <div class="mb-2 sm:mb-0">
           <p
             class="flex text-[rgba(102,102,102,1)] text-[12px] font-normal gap-[8px]">
             <img src="./assets/icon/Map Pin.svg" alt="" />
             Store Location: Lincoln- 344, Illinois, Chicago, USA
           </p>
         </div>
-        <div class="flex gap-[20px]">
+        <div class="flex flex-col sm:flex-row gap-[10px] sm:gap-[20px]">
           <select
             class="bg-white text-[rgba(102,102,102,1)] text-[12px] font-normal"
             name="lang"
@@ -30,7 +30,7 @@
             <option value="Uzb">Uzb</option>
           </select>
           <select
-            class="bg-white text-[rgba(102,102,102,1)] mr-[20px] text-[12px] font-normal"
+            class="bg-white text-[rgba(102,102,102,1)] text-[12px] font-normal"
             name="currency"
             id="">
             <option value="">USD</option>
@@ -49,16 +49,16 @@
         </div>
       </nav>
       <nav
-        class="w-[1319px] h-[93px] container mx-auto flex justify-between items-center">
-        <div>
+        class="flex flex-col sm:flex-row w-full sm:w-[1319px] h-auto sm:h-[93px] container mx-auto justify-between items-start sm:items-center p-2 sm:p-0">
+        <div class="mb-2 sm:mb-0">
           <a href="./index.html"><img src="./assets/img/Logo.svg" alt="" /></a>
         </div>
-        <div class="w-[498px] h-[45px] relative flex">
+        <div class="w-full sm:w-[498px] h-[45px] relative flex mb-2 sm:mb-0">
           <span class="absolute left-[16px] top-[12px]">
             <img src="./assets/icon/Search.svg" alt="" />
           </span>
           <input
-            class="pl-[44px] w-[400px] h-[45px] rounded-tl-[6px] rounded-bl-[6px] border focus:outline-none"
+            class="pl-[44px] w-full sm:w-[400px] h-[45px] rounded-tl-[6px] rounded-bl-[6px] border focus:outline-none"
             type="text"
             placeholder="Search" />
           <button
@@ -66,11 +66,11 @@
             Search
           </button>
         </div>
-        <div class="flex gap-[6px]">
+        <div class="flex gap-[6px] items-center">
           <img src="./assets/icon/Heart.svg" alt="" />
-          <hr />
+          <hr class="hidden sm:block h-[24px] border-l border-gray-300" />
           <img src="./assets/icon/Cart.svg" alt="" />
-          <div class="flex flex-col">
+          <div class="flex flex-col text-sm">
             <p class="text-[11px] font-normal text-[rgba(77,77,77,1)]">
               Shopping cart:
             </p>
@@ -80,11 +80,12 @@
       </nav>
       <nav class="w-full h-[60px] bg-[rgba(51,51,51,1)]">
         <div
-          class="w-[1319px] h-[60px] container mx-auto flex justify-between items-center">
-          <div class="flex gap-[32px]">
+          class="flex flex-col sm:flex-row w-full sm:w-[1319px] container mx-auto justify-between items-start sm:items-center p-2 sm:p-0 h-full">
+          <div
+            class="flex flex-col sm:flex-row gap-4 sm:gap-[32px] mb-2 sm:mb-0">
             <a href="#">
               <select class="bg-transparent text-white" name="Home" id="">
-                <a href="index.html"><option value="">Home</option></a>
+                <option value="">Home</option>
               </select>
             </a>
             <a href="#">
