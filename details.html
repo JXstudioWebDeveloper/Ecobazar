@@ -147,9 +147,11 @@
               alt="" />
             <div
               class="w-[80px] h-[396px] flex flex-col justify-between items-center">
-              <div
-                class="w-[80px] h-[90px] flex items-center justify-center">
-                <img class="thumb h-[90px]" src="./assets/img/chines.svg" alt="" />
+              <div class="w-[80px] h-[90px] flex items-center justify-center">
+                <img
+                  class="thumb h-[90px]"
+                  src="./assets/img/chines.svg"
+                  alt="" />
               </div>
               <div class="w-[80px] h-[90px] flex items-center justify-center">
                 <img
@@ -285,7 +287,9 @@
               <div
                 class="w-[124px] h-[50px] bg-[rgba(230,230,230,1)] rounded-[170px] flex justify-around items-center">
                 <button id="minus" class="text-[rgba(102,102,102,1)]">-</button>
-                <h1 id="count" class="text-[rgba(26,26,26,1)] text-[16px] font-normal">
+                <h1
+                  id="count"
+                  class="text-[rgba(26,26,26,1)] text-[16px] font-normal">
                   0
                 </h1>
                 <button id="plus" class="text-[rgba(102,102,102,1)]">+</button>
@@ -303,19 +307,24 @@
       <section class="w-[1320px] h-[523px] container mx-auto">
         <div
           class="w-full h-[56px] flex items-center justify-center gap-[32px]">
-          <h1
+          <button
+            id="tab1-btn"
             class="text-[16px] font-[500] text-[rgba(26,26,26,1)] underline decoration-[rgba(32,181,38,1)] underline-offset-[12px]">
             Descriptions
-          </h1>
-          <h1 class="text-[16px] font-[500] text-[rgba(128,128,128,1)]">
+          </button>
+          <button
+            id="tab2-btn"
+            class="text-[16px] font-[500] text-[rgba(128,128,128,1)] group">
             Additional Information
-          </h1>
-          <h1 class="text-[16px] font-[500] text-[rgba(128,128,128,1)]">
+          </button>
+          <button
+            id="tab3-btn"
+            class="text-[16px] font-[500] text-[rgba(128,128,128,1)]">
             Customer Feedback
-          </h1>
+          </button>
         </div>
         <div class="w-full h-[435px] mt-[32px] flex justify-between">
-          <div class="w-[648px] h-[435px]">
+          <div id="tab1" class="w-[648px] h-[435px] block">
             <div class="w-full h-[231px] flex flex-col">
               <p class="text-[14px] font-normal text-[rgba(128,128,128,1)]">
                 Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet
@@ -366,7 +375,86 @@
               </h1>
             </div>
           </div>
-          <div class="w-[536px] h-[435px]">
+          <div
+            id="tab2"
+            class="w-[513px] h-[186px] flex flex-col gap-y-[12px] hidden">
+            <div class="w-[130px] h-[21px] flex items-center">
+              <h1
+                class="text-[14px] font-normal text-[rgba(26,26,26,1)] w-[112px]">
+                Weight:
+              </h1>
+              <h1 class="text-[14px] font-normal text-[rgba(102,102,102,1)]">
+                03
+              </h1>
+            </div>
+            <div class="w-[155px] h-[21px] flex items-center">
+              <h1
+                class="text-[14px] font-normal text-[rgba(26,26,26,1)] w-[112px]">
+                Color:
+              </h1>
+              <h1 class="text-[14px] font-normal text-[rgba(102,102,102,1)]">
+                Green
+              </h1>
+            </div>
+            <div class="w-[170px] h-[21px] flex items-center">
+              <h1
+                class="text-[14px] font-normal text-[rgba(26,26,26,1)] w-[112px]">
+                Type:
+              </h1>
+              <h1 class="text-[14px] font-normal text-[rgba(102,102,102,1)]">
+                Organic
+              </h1>
+            </div>
+            <div class="w-[192px] h-[21px] flex items-center">
+              <h1
+                class="text-[14px] font-normal text-[rgba(26,26,26,1)] w-[112px]">
+                Category:
+              </h1>
+              <h1 class="text-[14px] font-normal text-[rgba(102,102,102,1)]">
+                Vegetables
+              </h1>
+            </div>
+            <div class="w-[227px] h-[21px] flex items-center">
+              <h1
+                class="text-[14px] font-normal text-[rgba(26,26,26,1)] w-[112px]">
+                Stock Status:
+              </h1>
+              <h1 class="text-[14px] font-normal text-[rgba(102,102,102,1)]">
+                Available (5,413)
+              </h1>
+            </div>
+            <div class="w-[513px] h-[21px] flex items-center">
+              <h1
+                class="text-[14px] font-normal text-[rgba(26,26,26,1)] w-[112px]">
+                Tags:
+              </h1>
+              <h1 class="text-[14px] font-normal text-[rgba(102,102,102,1)]">
+                Vegetables,Healthy,
+                <span class="text-[rgba(26,26,26,1)]">Chinese,</span>
+                Cabbage,Green Cabbage,
+              </h1>
+            </div>
+          </div>
+          <div id="tab3" class="w-[760px] h-[479px] hidden">
+            <div class="w-[760px] h-[74px]">
+              <div class="w-[760] h-[41px]">
+                <div
+                  class="w-[173px] h-[41px] flex items-center justify-between">
+                  <img src="./assets/img/Image(19).svg" alt="" />
+                  <div class="w-[120px] h-[41px]">
+                    <h1 class="text-[14px] font-[500] text-[rgba(26,26,26,1)]">
+                      Kristin Watson
+                    </h1>
+                    <img
+                      class="w-[80px]"
+                      src="./assets/icon/Rating(1) (copy 1).svg"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab4" class="w-[536px] h-[435px]">
             <div
               class="w-full h-[300px] bg-no-repeat bg-center bg-contain flex justify-center"
               style="background-image: url(./assets/img/kimdur.svg)">
