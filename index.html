@@ -9,7 +9,96 @@
       type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="relative">
+    <div id="modalBg" class="w-full h-screen bg-[rgb(0,0,0,0.7)] absolute z-40 flex items-center justify-center hidden">
+      <div id="modal" class="w-[872px] h-[400px] bg-white rounded-[8px] flex items-center justify-between shadow-lg z-50 transform translate-y-full transition-transform duration-300 ease-in-out">
+        <img class="ml-[10px]" src="./assets/img/BG.png" alt="">
+        <div class="w-[428px] h-[380px] flex flex-col items-center">
+          <h1 class="text-[40px] font-[600] text-[rgba(26,26,26,1)] text-center mt-[25px]">Subcribe to Our Newsletter</h1>
+          <p class="text-[16px] font-[600] text-[rgba(153,153,153,1)] text-center mt-[8px]">Subscribe to our newlletter and Save your 20% money with discount code today.</p>
+          <div class="w-[428px] h-[50px] flex items-center justify-between mt-[24px]">
+            <input class="pl-[24px] focus:outline-none" type="text" placeholder="Enter your email">
+            <button id="subcribe" class="w-[147px] h-[49px] rounded-[43px] bg-[rgba(0,178,7,1)] text-white text-[14px] font-[600]">Subscribe</button>
+          </div>
+          <button id="close-btn" class="text-[14px] font-normal text-[rgba(102,102,102,1)] mt-[50px]">Do not show this window</button>
+        </div>
+        <img id="closeModal" class="mt-[-350px]" src="./assets/icon/Close.svg" alt="">
+      </div>
+    </div>
+    <div
+      id="drawer-bg"
+      class="w-full h-screen bg-[rgb(0,0,0,0.7)] fixed inset-0 z-40 hidden">
+      <div
+        id="drawer"
+        class="fixed top-0 right-0 w-[456px] h-full bg-white shadow-lg z-50 transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div class="w-[376px] h-[281px] m-[40px]">
+          <div class="w-[376px] h-[45px] flex items-center justify-between">
+            <h1 class="text-[20px] font-[500] text-[rgba(26,26,26,1)]">
+              Shopping Card (2)
+            </h1>
+            <img id="close" src="./assets/icon/Close.svg" alt="" />
+          </div>
+          <div
+            id="shopCart"
+            class="w-[376px] h-[100px] flex items-center justify-between mt-[12px]">
+            <img class="w-[120px]" src="./assets/img/apelsin.svg" alt="" />
+            <div class="w-[216px] h-[44px]">
+              <h1 class="text-[14px] font-normal text-[rgba(26,26,26,1)]">
+                Fresh Indian Orange
+              </h1>
+              <h1 class="text-[14px] font-normal text-[rgba(128,128,128,1)]">
+                1 kg x
+                <span class="text-[14px] font-[600] text-[rgba(26,26,26,1)]">
+                  12.00
+                </span>
+              </h1>
+            </div>
+            <img id="closeShopCart" src="./assets/icon/Close(1).svg" alt="" />
+          </div>
+          <div
+            id="shopCart2"
+            class="w-[376px] h-[100px] flex items-center justify-between mt-[12px]">
+            <img
+              class="w-[120px]"
+              src="./assets/img/Product Image.svg"
+              alt="" />
+            <div class="w-[216px] h-[44px]">
+              <h1 class="text-[14px] font-normal text-[rgba(26,26,26,1)]">
+                Green Apple
+              </h1>
+              <h1 class="text-[14px] font-normal text-[rgba(128,128,128,1)]">
+                1 kg x
+                <span class="text-[14px] font-[600] text-[rgba(26,26,26,1)]">
+                  14.00
+                </span>
+              </h1>
+            </div>
+            <img id="closeShopCart2" src="./assets/icon/Close(1).svg" alt="" />
+          </div>
+        </div>
+        <div class="w-[376px] h-[186px] mt-[200px] ml-[40px]">
+          <div class="w-[376px] h-[72px] flex items-center justify-between">
+            <h1 class="text-[16px] font-normal text-[rgba(26,26,26,1)]">
+              2 Product
+            </h1>
+            <h1 class="text-[16px] font-[600] text-[rgba(26,26,26,1)]">
+              $26.00
+            </h1>
+          </div>
+          <button
+            class="w-[376px] h-[51px] rounded-[43px] bg-[rgba(0,178,7,1)] text-[16px] font-[600] text-white">
+            Checkout
+          </button>
+          <a href="./shopping.html">
+            <div class="w-[376px] h-[51px] flex items-center justify-center mt-[12px]">
+            <h1 class="text-[16px] font-[600] text-[rgba(0,178,7,1)]">
+              Go To Cart
+            </h1>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <header class="w-full h-[195px]">
       <nav
         class="flex flex-col sm:flex-row w-full sm:w-[1319px] h-auto sm:h-[42px] items-start sm:items-center justify-between container mx-auto p-2 sm:p-0">
@@ -58,7 +147,7 @@
             <img src="./assets/icon/Search.svg" alt="" />
           </span>
           <input
-            class="pl-[44px] w-full sm:w-[400px] h-[45px] rounded-tl-[6px] rounded-bl-[6px] border focus:outline-none"
+            class="pl-[44px] w-full h-[45px] rounded-tl-[6px] rounded-bl-[6px] border focus:outline-none"
             type="text"
             placeholder="Search" />
           <button
@@ -67,13 +156,13 @@
           </button>
         </div>
         <div class="flex gap-[6px] items-center">
-          <img src="./assets/icon/Heart.svg" alt="" />
+          <img id="openModal" src="./assets/icon/Heart.svg" alt="" />
           <hr class="hidden sm:block h-[24px] border-l border-gray-300" />
-          <img src="./assets/icon/Cart.svg" alt="" />
+          <img id="drawer-btn" src="./assets/icon/Cart.svg" alt="" />
           <div class="flex flex-col text-sm">
-            <p class="text-[11px] font-normal text-[rgba(77,77,77,1)]">
+            <button class="text-[11px] font-normal text-[rgba(77,77,77,1)]">
               Shopping cart:
-            </p>
+            </button>
             <p class="text-[14px] font-[500] text-[rgba(26,26,26,1)]">$57.00</p>
           </div>
         </div>
@@ -1914,5 +2003,6 @@
       </div>
     </footer>
     <script src="./app.js"></script>
+    <script src="./home.js"></script>
   </body>
 </html>
